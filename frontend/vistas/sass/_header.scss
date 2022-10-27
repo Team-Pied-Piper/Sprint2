@@ -1,0 +1,92 @@
+@use "variables";
+
+.header {
+  //border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  padding: 0 24px;
+
+  @media (min-width: 1115px) {
+    height: 75px;
+    border-bottom: 1px solid variables.$Grayish-blue;
+  }
+
+  &__navigation {
+    width: 175px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @media (min-width: 1115px) {
+      width: 590px;
+    }
+  }
+
+  &__menu {
+    &:hover {
+      cursor: pointer;
+    }
+
+    @media (min-width: 1115px) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    height: 30px;
+
+    &:hover {
+      cursor: pointer;
+    }
+    @media (min-width: 1115px) {
+      height: 55%;
+    }
+  }
+
+  &__cart-avatar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 0;
+
+    @media (min-width: 1115px) {
+      width: 125px;
+      height: 90%;
+    }
+  }
+
+  &__cart {
+    position: relative;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__cart--notification {
+    width: 15px;
+    background-color: variables.$Orange;
+    height: 12px;
+    border-radius: 16px;
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    font-size: 0.6em;
+    text-align: center;
+    color: variables.$White;
+    font-weight: bold;
+    display: none;
+
+  }
+
+  &__avatar {
+    font-weight: bold;
+    font-size: 18px;
+    @media (min-width: 1115px) {
+      font-size: 20px;
+    }
+  }
+}

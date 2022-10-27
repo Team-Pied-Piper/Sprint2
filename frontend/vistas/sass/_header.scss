@@ -1,7 +1,6 @@
 @use "variables";
 
 .header {
-  //border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,7 +53,7 @@
 
     @media (min-width: 1115px) {
       width: 125px;
-      height: 90%;
+      height: 100%;
     }
   }
 

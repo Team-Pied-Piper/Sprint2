@@ -1,4 +1,4 @@
-@use "variables";
+@use "variables" as v;
 @use "mixins";
 
 .gallery {
@@ -24,7 +24,38 @@
     display: none;
 
     @media (min-width: 1115px) {
-      display: block;
+      display: flex;
+      justify-content: space-between;
+
+    }
+  }
+
+  @media (min-width: 1115px) {
+    width: 446px;
+
+    &__image-container {
+      border-radius: 16px;
+      height: 380px;
+      margin-bottom: 15px;
+      background-position-y: 0;
+    }
+
+    &__thumnail {
+      width: 90px;
+      border-radius: 16px;
+
+      &:hover {
+        cursor: pointer;
+        border: 2px solid v.$Orange;
+      }
+    }
+
+    &__previus {
+      display: none;
+    }
+
+    &__next {
+      display: none;
     }
   }
 }

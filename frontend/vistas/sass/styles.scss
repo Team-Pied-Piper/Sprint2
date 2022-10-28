@@ -8,6 +8,8 @@
 @use "details";
 @use "input";
 @use "modal-cart";
+@use "modal-gallery";
+@use "footer";
 
 .main-container{
   width: 375px;
@@ -16,5 +18,13 @@
   position: relative;
   @media (min-width: 1115px) {
     width: 1115px;
+  }
+}
+
+.content{
+  @media (min-width: 1115px) {
+    display: flex;
+    padding: 30px 50px;
+    gap: 60px;
   }
 }
